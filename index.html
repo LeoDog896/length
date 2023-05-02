@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length</title>
+</head>
+<body>
+    <textarea></textarea>
+    <p>Length: <span>0</span></p>
+    <script defer>
+        const textarea = document.querySelector("textarea");
+        const length = document.querySelector("span");
+
+        textarea.addEventListener("input", () => {
+            const value = textarea.value;
+            length.innerText = value.length;
+        })
+    </script>
+</body>
+</html>
